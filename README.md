@@ -16,6 +16,8 @@ BudgetMate is a web application that helps users manage their finances effective
 
 - Customizable Logo Integration
 - Font Improvements
+- User Interactive Message
+- Transfer Account Options Auto Interchange
 - Calendar Feature for Selecting Transaction Dates (currently using current_timestamp)
 - Description-Wise Spending Distribution
 - Enabling Comprehensive Transaction Editing and Subsequent Transaction Update
@@ -51,6 +53,7 @@ Log Table
 
 - **Frontend:** Built with Bootstrap for a responsive and mobile-first design.
 - **Backend:** Powered by PHP for server-side scripting and database interactions.
+- Even though server-side validation performed there in PHP, JavaScript validation is beneficial for improving the user experience by preventing unnecessary form submissions and providing instant feedback to users without requiring a round trip to the server.
 
 ## Contributing Fixes
 
