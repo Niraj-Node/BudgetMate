@@ -20,7 +20,7 @@
         mysqli_autocommit($conn,FALSE);
         $query = delete_data_1($conn,$user_id);
         $result = mysqli_query($conn,$query);
-        $query = delete_data_2($conn,$user_id);
+        $query = delete_data_2($conn,$username);
         $result = mysqli_query($conn,$query);
         $commit = mysqli_commit($conn);
         mysqli_autocommit($conn,TRUE);
