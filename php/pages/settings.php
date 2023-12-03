@@ -10,7 +10,7 @@
     <title>Settings</title>
     <!--CSS-->
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/fontawesome.all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 

@@ -9,7 +9,7 @@
     <title>Home</title>
     <!--CSS-->
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/fontawesome.all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
     <!--JS for Graph-->
     <script src="../../js/google_chart_loader.js"></script>
@@ -43,7 +43,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mr-auto">
-                    <a class="nav-item nav-link active" href=".">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="./home.php">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="./history.php">History</a>
                     <a class="nav-item nav-link" href="./settings.php">Settings</a>
                     <a class="nav-item nav-link text-danger" href="../handlers/logout.php">Log Out</a>

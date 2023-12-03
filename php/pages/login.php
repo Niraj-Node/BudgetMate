@@ -10,7 +10,7 @@
     <title>Sign in into BudgetMate</title>
     <!--CSS-->
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/fontawesome.all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
 
     <style>
@@ -40,6 +40,13 @@
     }
 ?>
 
+<script>
+    window.onload = function() {
+        const captchaText = generateRandomCaptcha();
+        document.getElementById("captchaText").innerText = captchaText;
+    };
+</script>
+
     <main>
         <div class="center-page container">
             <div class="row">
@@ -53,6 +60,20 @@
                         <div class="form-group">
                           <label for="password">Password</label>
                           <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Enter Password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="captcha">Enter the text you see below:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-lg" id="captcha" name="captcha" placeholder="Enter Captcha" required>
+                                <div class="input-group-append">
+                                    <span class="input-group-text" style="background-color: #B6BBC4;">
+                                        <span id="captchaText" class="captcha-text"></span>
+                                        <button type="button" class="btn btn-link" onclick="refreshCaptcha()">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                         <button type="submit" class="btn btn-primary btn-custom btn-lg">Submit</button>
                     </form>

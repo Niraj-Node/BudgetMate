@@ -17,6 +17,7 @@ BudgetMate is a web application that helps users manage their finances effective
 - Customizable Logo Integration
 - Font Improvements
 - User Interactive Message
+- Custom Error (404) Page
 - Transfer Account Options Auto Interchange
 - Calendar Feature for Selecting Transaction Dates (currently using current_timestamp)
 - Description-Wise Spending Distribution

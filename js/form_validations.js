@@ -1,6 +1,45 @@
+function generateRandomCaptcha(length = 8, type = "mixed") {
+  let characters = "";
+  let captcha = "";
+
+  switch (type) {
+    case "alpha":
+      characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+      break;
+    case "numeric":
+      characters = "0123456789";
+      break;
+    case "alphanumeric":
+      characters =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+      break;
+    default:
+      characters =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  }
+
+  const charLength = characters.length;
+
+  for (let i = 0; i < length; i++) {
+    captcha += characters.charAt(Math.floor(Math.random() * charLength));
+  }
+
+  return captcha;
+}
+
+function refreshCaptcha() {
+  var newCaptcha = generateRandomCaptcha();
+  document.getElementById("captchaText").innerText = newCaptcha;
+}
+
 function validateLoginForm() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
+  const captchaInput = document.getElementById("captcha");
+  const captchaText = document.getElementById("captchaText");
+  const captchaInputValue = captchaInput.value.trim().toLowerCase();
+  const captchaTextValue = captchaText.textContent.trim().toLowerCase();
+
   if (isEmptyOrBlank(username)) {
     alert("Name must be filled out!");
     return false;
@@ -13,6 +52,11 @@ function validateLoginForm() {
   } else if (username.length > 20) {
     alert("Too long of a username!");
     return false;
+  } else if (!(captchaInputValue === captchaTextValue)) {
+    alert("Invalid CAPTCHA. Please enter the correct CAPTCHA text.");
+    captchaInput.value = "";
+    refreshCaptcha();
+    return false;
   } else {
     return true;
   }
@@ -22,6 +66,11 @@ function validateSignUpForm() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
   var repassword = document.getElementById("repassword").value;
+  const captchaInput = document.getElementById("captcha");
+  const captchaText = document.getElementById("captchaText");
+  const captchaInputValue = captchaInput.value.trim().toLowerCase();
+  const captchaTextValue = captchaText.textContent.trim().toLowerCase();
+
   if (password != repassword) {
     alert("Both passwords should match!");
     return false;
@@ -39,6 +88,11 @@ function validateSignUpForm() {
     return false;
   } else if (username.length > 20) {
     alert("Too long of a username!");
+    return false;
+  } else if (!(captchaInputValue === captchaTextValue)) {
+    alert("Invalid CAPTCHA. Please enter the correct CAPTCHA text.");
+    captchaInput.value = "";
+    refreshCaptcha();
     return false;
   } else {
     return true;
