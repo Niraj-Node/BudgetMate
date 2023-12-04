@@ -56,6 +56,10 @@ Log Table
 - **Backend:** Powered by PHP for server-side scripting and database interactions.
 - Even though server-side validation performed there in PHP, JavaScript validation is beneficial for improving the user experience by preventing unnecessary form submissions and providing instant feedback to users without requiring a round trip to the server.
 
+## Accessing the Application
+
+You can access the BudgetMate application by visiting [budgetmate.great-site.net](https://budgetmate.great-site.net).
+
 ## Contributing Fixes
 
 If you encounter any issues, bugs, or unexpected behavior while using BudgetMate, we encourage you to report them.
