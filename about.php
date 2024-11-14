@@ -90,22 +90,14 @@
 
     <!--Footer-->
     <footer id="footer">
-      <div class="container">
-        <div class="text-center copyright">
-          &copy; Copyright
-          <strong
-            ><a href="https://niraj-node.github.io/" target="_blank"
-              >Niraj Aghera</a
-            ></strong
-          >
+        <div class="container text-center">
+            <div class="copyright">
+                &copy; <strong><a href="https://niraj-node.github.io/" target="_blank">Niraj Aghera</a></strong>
+            </div>
+            <div class="credits">
+                Designed by <a href="https://niraj-node.github.io/" target="_blank">Niraj Aghera</a>
+            </div>
         </div>
-        <div class="text-center credits">
-          Designed by
-          <a href="https://niraj-node.github.io/" target="_blank"
-            >Niraj Aghera</a
-          >
-        </div>
-      </div>
     </footer>
     <!--JS-->
     <script

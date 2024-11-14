@@ -97,15 +97,15 @@
 
     <!--Footer-->
     <footer id="footer">
-        <div class="container">
-            <div class="text-center copyright">
-                &copy; Copyright <strong><a href="https://niraj-node.github.io/" target="_blank">Niraj Aghera</a></strong>
+        <div class="container text-center">
+            <div class="copyright">
+                &copy; <strong><a href="https://niraj-node.github.io/" target="_blank">Niraj Aghera</a></strong>
             </div>
-            <div class="text-center credits">
+            <div class="credits">
                 Designed by <a href="https://niraj-node.github.io/" target="_blank">Niraj Aghera</a>
             </div>
         </div>
-   </footer>
+    </footer>
 
     <!--JS-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
