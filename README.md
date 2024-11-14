@@ -46,9 +46,8 @@ Log Table
 2. **Web Hosting:** Deploy the PHP backend and Bootstrap frontend on a web server.
 
 3. **Accessing the Application:**
-   Access your server's database using tools like phpMyAdmin or command-line interfaces.
+   Access your server's database using tools like phpMyAdmin.
    Create a new database named "budgetmate" and import the SQL schema provided in description.
-   Create a new database user and grant appropriate privileges to the database.
 
 ## Technologies Used
 
