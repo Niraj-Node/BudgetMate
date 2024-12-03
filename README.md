@@ -57,7 +57,7 @@ Log Table
 
 ## Accessing the Application
 
-You can access the BudgetMate application by visiting [budgetmate.great-site.net](https://budgetmate.great-site.net).
+You can access the BudgetMate application by visiting [Deployed Website](http://budgetmate.000.pe).
 
 ## Contributing Fixes
 
